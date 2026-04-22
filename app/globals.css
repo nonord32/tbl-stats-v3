@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/*
+ * Phase 1 only declares the minimum tokens needed to verify the pipeline.
+ * Phase 3 will expand this into the full broadsheet token set from handoff/TOKENS.md.
+ */
+@theme {
+  --color-paper: #f5f1e8;
+  --color-paper-soft: #ebe3d2;
+  --color-ink: #1a1612;
+  --color-ink-2: #3d362e;
+  --color-ink-3: #6b5f4f;
+  --color-rule: #d8cfbc;
+  --color-accent: #c4321e;
+
+  --font-sans: var(--font-inter), "Inter", "Söhne", "Helvetica Neue", system-ui, sans-serif;
+  --font-serif: Georgia, "Tiempos Text", "Times New Roman", serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
